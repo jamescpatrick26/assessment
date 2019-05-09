@@ -12,14 +12,53 @@
         <nav class = "nav-justify">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href=""></a></li>
+                <li><a href="what_you_can_do.html">What You Can Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>   
+        </nav>  
+    </div>
+    <div class = "box">
+            <h1>Home Page</h1>
+        
+        <div class ="slider">
+         <div id="img">
+            <img src="forest1.jpg">
+         </div>
+        
+        </div>
+    <script>
+        var img = document.getElementById('img');
+        var images = ['forest1.jpg','tree.jpg','polar-bear.jpg'];
+        var x = 0;
+        
+        function slide(){
+            if (x<images.length){
+            x = x + 1;
+            }else{
+                x = 1;
+            }
+            img.innerHTML = "<img src="+images[x-1]+">";
+            
+        }
+        //auto slide 
+        setInterval(slide, 4000);
+    </script>
+    <style>
+        .slider{
+            width:600px;
+            height: 400px;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 10px grey;
+            margin: 20px auto;
+        }
+        img{
+            width: 600px;
+            height:400px;
+        }
+    </style>
     </div>
     
-    <h1>Home Page</h1>
     <p style="font-size: 0.9rem;font-style: italic;"><a href="https://svgsilh.com/009688/image/708823.html">"world fingerprint map"</a> is licensed under <a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC0 1.0</a><a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-cc0_icon.svg" /></a></p>
 </body>
 </html>

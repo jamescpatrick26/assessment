@@ -6,7 +6,7 @@ body {
 }
 .nav-justify ul {
     
-    background-color: red;
+    background-color: #43f441;
     list-style-type: none;
     padding: 10px;
     margin: 0;
@@ -17,6 +17,15 @@ body {
     font-size: 18px;
     width:20%;
     border-color: black;
-    border-right: 1px solid #bbb;
+    border-right: 1px solid grey;
     text-decoration: none;
+}
+
+.box {
+    font-family: monospace
+    width: 1350px;
+    height: 600px;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
