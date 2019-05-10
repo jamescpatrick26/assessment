@@ -20,13 +20,16 @@
     </div>
     <div class = "box">
         <h1>Contact Page</h1>
-    
-    
-    <form action="http://www.google.com" method="post">
-    <p> <label for="name">First Name:</label> <input type="text" name="name"> </p>
-    <p> <label for="email">Email:</label> <input type="text" name="email"> </p>
-    <p><input type="submit" name="Submit" value="Submit"></p>
+        <p>in the form below we encourage our users to provide information in order to recieve weekly emails about the current work that is going on. Additionally please provide any queries you may have in the message box provided. A valid firstname, surname and email must be provided.</p>
+            <div class= "contact1">
+                    <form action="http://www.google.com" method="post">
+                        <p> <label for="first_name">First Name:</label> <input type="text" name="first_name" required ></p>
+                        <p> <label for="last_name">Last Name:</label> <input type="text" name="last_name" required ></p>
+                        <p> <label for="email">Email:</label> <input type="text" email="email" required></p>
+                        <textarea name="message" rows="5" cols="28"></textarea>
+                        <p> <label for="Checkout"></label><input type="submit" value="checkout"></p>
+                    </form>
+            </div>      
     </div>
-</form>
 </body>
 </html>
